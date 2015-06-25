@@ -20,7 +20,7 @@ body{
 .brandingHeight{
     min-height:60px;
 }
-.borderRadias{
+.borderRadius{
     border-radius:10px;
 }
 /***** End generics *****/
@@ -37,4 +37,29 @@ body{
 .formRight{
     
 }
-/***** End top most row *****//
+/***** End top most row *****/
+/***** Begin media queries *****/
+
+
+
+
+@media (min-width: 360px) and (max-width: 767px){ /* mobile all  */
+    
+
+    #txtSearch.form-control.sm_inline{
+        display:inline-block;
+        width:57%;
+    }
+    .sm_center{
+        text-align:center;
+    }
+
+
+
+}
+
+/***** End media queries *****/
+
+
+
+
