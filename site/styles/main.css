@@ -75,6 +75,9 @@ body{
 .navContainer ul li a:hover, .navContainer ul li a:focus{
     background-position:right 59px;     
 }
+.pageFormTop .btn{
+    left:0.5em;
+}
 /***** End second row navigation *****/
 /***** Begin media queries *****/
  @media (max-width:640px){
