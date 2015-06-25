@@ -39,9 +39,9 @@ body{
     border-bottom-left-radius:10px;    
 }
 /***** End generics *****/
-/***** Begin top most row *****//
+/***** Begin top most row *****/
 .pageFormTop{
-    
+    margin-bottom:20px;
 }
 .brandingTop{
     background:transparent url("../images/branding.png") no-repeat 54px center;
