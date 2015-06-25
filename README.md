@@ -1,4 +1,4 @@
-<h1>Backbone App Prototype Only</h1> 
+<h1>Test</h1> 
 <p>Test</p>
 <p><a href="http://jvmqueue.com/testGlennBlankenship/site/home.html">Live URL</a></p>
 <h2>Current State</h2>
