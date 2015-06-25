@@ -50,12 +50,12 @@ body{
     height: 200px;
 }
 .row2 .colLeft{
-    height: 200px;
+    padding:0 54px
 }
 .midMainLeft{
     background:url(../images/midMainLeft.png);
     background-repeat:no-repeat;    
-    height:402px;
+    height:516px;
 }
 .followUs{
     height:113px;
@@ -100,6 +100,61 @@ body{
     background:transparent url(../images/iconGoogle.png) no-repeat;
 }
 /***** End third row content *****/
+/***** Begin products grid *****/
+.productsGrid{
+    height: 300px;
+    background-color: red;
+}
+.productTextContainer{
+    background-color:#FFFFFF;   
+}
+.productText{
+  line-height: 1.7em;
+  margin-left: 43%;
+  width: 62%;
+
+}
+.productCell00{
+    background:url(../images/productsXplosian.png);
+    background-position:left 3.0em; 
+    background-repeat:no-repeat;        
+}
+.productCell01{
+    background:transparent url(../images/productsHitInJapan.png) no-repeat left 3.0em;
+}
+.productCell10{
+    background:transparent url(../images/productsNewFlavor.png) no-repeat left 3.0em;
+}
+.productCell11{
+    background:transparent url(../images/productsDanishElder.png) no-repeat left 3.0em;
+}
+.productCell{
+    background-color:#FFFFFF;
+    background-size:40% auto;    
+}
+.productHeaderSub{
+    font-weight:bold;
+}
+.productLink{
+    color:#E61052;
+    display:inline-block;
+    background:transparent url(../images/bulletBoxAndArrowPointRight.png) no-repeat 3.0em center;
+}
+.products .productText, .productLink{
+    line-height:1.7em;
+    margin-left:43%;
+    width:62%;
+}
+
+.container .row .productHeader{
+    color:#FFFFFF;
+    background:transparent url("../images/spriteNav.png") repeat-x right -4px;
+    border-top-right-radius:10px;
+    border-top-left-radius:10px;
+    min-width:569px;
+    height:3.0em;    
+}
+/***** End products grid *****/
 /***** Begin generics *****/
 .pinkColor{
     color:#E61052;
@@ -143,6 +198,9 @@ body{
 .bulletBoxArrow > li{
     background:url(../images/bulletBoxAndArrow.png) no-repeat left 10px;
 }
+.inlineBlock{
+    display:inline-block;
+}
 /***** End generics *****/
 /***** Begin media queries *****/
  @media (max-width:640px){
@@ -169,7 +227,13 @@ body{
     }    
     .row2 .colRight{
         margin-top:27%;   
-    }    
+    }
+    .container .row .productHeader{
+        width:100%;    
+    }
+
+
+
 }
 @media (max-width: 640px) and (orientation:landscape){
     .navContainer ul li{
