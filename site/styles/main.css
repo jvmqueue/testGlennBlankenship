@@ -60,8 +60,7 @@ body{
 }
 /***** End second row navigation *****/
 /***** Begin media queries *****/
- @media (min-width:360px) and (orientation:portrait), (orientation:landscape){
-
+ @media (max-width: 640px){
     .brandingTop{
         background-position:center center
     }
