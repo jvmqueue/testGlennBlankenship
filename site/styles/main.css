@@ -23,41 +23,56 @@ body{
 .borderRadius{
     border-radius:10px;
 }
+.alignRight{
+    text-align:right;
+}
+.noPadding{
+    padding:0;
+}
 /***** End generics *****/
 /***** Begin top most row *****//
 .pageFormTop{
     
 }
 .brandingTop{
-    background:transparent url("../images/branding.png") no-repeat center center;
+    background:transparent url("../images/branding.png") no-repeat 54px center;
 }
 .brandingCenter{
     background:transparent url("../images/brandingSub.png") no-repeat center center;
 }
-.formRight{
-    
+.tempColor{
+    background-color: red;
+    height: 300px;
 }
 /***** End top most row *****/
+/***** Begin second row navigation *****/
+.navContainer ul li{
+    text-align:center;
+    text-transform:uppercase;
+    width:16%;
+    height:55px;        
+    list-style:none;
+    background:transparent url("../images/spriteNav.png") repeat right -4px;    
+}
+.navContainer ul li a{
+    width:100%;
+    height:100%;
+}
+/***** End second row navigation *****/
 /***** Begin media queries *****/
+ @media (min-width:360px) and (orientation:portrait), (orientation:landscape){
 
-
-
-
-@media (min-width:360px), (max-width:768px){ /* mobile all  */
-    
-
-    #txtSearch.form-control.sm_inline{
+    .brandingTop{
+        background-position:center center
+    }
+    .sm_inline{
         display:inline-block;
         width:57%;
     }
     .sm_center{
         text-align:center;
     }
-
-
-
 }
-
 /***** End media queries *****/
 
 
