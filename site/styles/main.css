@@ -1,6 +1,7 @@
 body{
-
+    background-color:#EAE2D7;
 }
+
 .navTop{
     width:100%;
 }
@@ -8,9 +9,14 @@ body{
     text-align:center;
     text-transform:uppercase;
     width:16%;
-    height:55px;
-    background:#ffffff url("../images/spriteNav.png") repeat right -4px;
+    height:55px;    
 }
+.navTop li a{
+    width: 100%;
+    height: 100%;
+    background:transparent url("../images/spriteNav.png") repeat right -4px;
+}
+
 .navTop li.left{
     border-top-left-radius:10px;
     border-bottom-left-radius:10px;
@@ -22,24 +28,129 @@ body{
 .navbar-nav.navTop li a{
     color:#FFFFFF;
 }
-.navbar-nav.navTop li:hover{
+.navbar-nav.navTop li a:hover, .navbar-nav.navTop li a:focus{
     background-position:right 59px; 
+}
+.navbar-nav.navTop a:hover{
+    background-color:transparent;
+}
+.navbar-nav.navTop a:focus{
+    background-color:transparent;
 }
 .navbar-nav.navTop li:hover a{
     color:#FFFFFF;
 }
+.container .navContainer{
+    margin-bottom:30px;
+    padding:0;
+}
+.mainRight{
+    width:34%;
+}
+.mainLeft{
+    margin-right:3%;
+    width:60%;
+}
+.mainAvert{
+    background:transparent url(../images/midMainLeft.png) no-repeat;
+    background-size:100% auto;
+    height:402px; 
+}
+.colorBox{
+    background:transparent url(../images/colorBox.png) no-repeat;
+    background-size:100% auto;
+    height:242px; 
+}
+.productContainer{
+    background-color:#FFFFFF;
+    border-radius:10px; 
+}
+.productCell{
+    background-size:40% auto;    
+}
+.productCell00{
+    background:transparent url(../images/productsXplosian.png) no-repeat left 3.0em;
+}
+.productCell01{
+    background:transparent url(../images/productsHitInJapan.png) no-repeat left 3.0em;
+}
+.productCell10{
+    background:transparent url(../images/productsNewFlavor.png) no-repeat left 3.0em;
+}
+.productCell11{
+    background:transparent url(../images/productsDanishElder.png) no-repeat left 3.0em;
+}
+.productHeaderSub{
+    font-weight:bold;
+}
+.productLink{
+    color:#E61052;
+    display:inline-block;
+    background:transparent url(../images/bulletBoxAndArrowPointRight.png) no-repeat 3.0em center;
+}
+.products .productText, .productLink{
+    line-height:1.7em;
+    margin-left:43%;
+    width:62%;
+}
 
- @media (min-width: 360px) and (orientation:portrait){ /* mobile  */
+.container .row .productHeader{
+    color:#FFFFFF;
+    background:transparent url("../images/spriteNav.png") repeat-x right -4px;
+    border-top-right-radius:10px;
+    border-top-left-radius:10px;
+    height:3.0em;    
+}
+.socialHeading{
+    color:#E61052;
+    text-transform:uppercase;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.containerSocial{
+    background-color:#FFFFFF;
+    margin-bottom:20px;
+    border-radius:10px;
+    padding:5px 0 5px 3%;
+}
+.containerSocial.containerRandom li{
+    padding:0 6%;
+    width:100%
+}
+.containerRandom li{
+    background:url(../images/bulletBoxAndArrow.png) no-repeat left 5px; 
+    list-style-position:outside;
+}
+.nav-pills li{
+    width:31%;
+}
+.nav-pills > li > a {
+    color:#97866F;
+    padding-top:0;
+}
+.nav-pills .facebook a, .nav-pills .twitter a, .nav-pills .google a{    
+    padding-left:26%;
+}
+.facebook{
+    background:transparent url(../images/iconFacebook.png) no-repeat;    
+}
+.twitter{
+    background:transparent url(../images/iconTwitter.png) no-repeat;
+}
+.google{
+    background:transparent url(../images/iconGoogle.png) no-repeat;
+}
+
+@media (min-width: 360px) and (orientation:portrait){ /* mobile  */
     .navTop li{
         font-size:0.7em;
         padding:0 0.1em 0 0.1em;
-        width:23%;
     }
     .navTop li a{
         display:block;
         margin:auto;
         width:100%
-    }                
+    }      
 }
 
 @media (max-width: 767px) and (orientation:landscape){ /* mobile landscape */
@@ -52,10 +163,30 @@ body{
 }
 
 @media (min-width: 360px) and (max-width: 767px){ /* mobile all  */
+    
+    .navTop{
+        margin:0;
+    }
     .navTop li{
         border-radius:10px;
-    }    
-    .container{
-        margin:0 1.5em;
+        width:100%;
     }
+    .container{
+        margin:0;
+        padding:0;
+    }
+    .container .navContainer{
+        padding-right:0;
+    }
+    .mainMidContainer{
+        padding-left:0;
+    }
+    .mainAvert, .colorBox{
+        height:97px; 
+    }
+    .nav-pills .facebook a, .nav-pills .twitter a, .nav-pills .google a{    
+        visibility:hidden;
+    }                      
+
+
 }
