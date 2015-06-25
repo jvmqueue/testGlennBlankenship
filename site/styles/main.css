@@ -1,44 +1,7 @@
 body{
     background-color:#EAE2D7;
 }
-/***** Begin generics *****/
-.pinkColor{
-    color:#E61052;
-}
-.pinkBackground{
-    background-color:#E61052;
-}
-.pinkLighterBackground{
-    background-color:#EAE2D7;
-}
-.whiteColor, .whiteColor a{
-    color:#FFFFFF;
-}
-.imgBackground{
-    background-size:100% auto;    
-}
-.brandingHeight{
-    min-height:60px;
-}
-.borderRadius{
-    border-radius:10px;
-}
-.alignRight{
-    text-align:right;
-    margin:0 12% 0 0;
-}
-.noPadding{
-    padding:0;
-}
-.borderRadiusRight{
-    border-top-right-radius:10px;
-    border-bottom-right-radius:10px;
-}
-.borderRadiusLeft{
-    border-top-left-radius:10px;
-    border-bottom-left-radius:10px;    
-}
-/***** End generics *****/
+
 /***** Begin top most row *****/
 .pageFormTop{
     margin-bottom:20px;
@@ -55,6 +18,9 @@ body{
 }
 /***** End top most row *****/
 /***** Begin second row navigation *****/
+.row1{
+    margin-bottom:40px;
+}
 .navContainer ul li{
     text-align:center;
     text-transform:uppercase;
@@ -79,6 +45,105 @@ body{
     left:0.5em;
 }
 /***** End second row navigation *****/
+/***** Begin third row content *****/
+.row2 .colRight{
+    height: 200px;
+}
+.row2 .colLeft{
+    height: 200px;
+}
+.midMainLeft{
+    background:url(../images/midMainLeft.png);
+    background-repeat:no-repeat;    
+    height:402px;
+}
+.followUs{
+    height:113px;
+}
+.randomlySelected{
+    height:221px;
+}
+.randomlySelected li a{
+    padding:5px 41px;
+}
+.socialHeading{
+    color:#E61052;
+    text-transform:uppercase;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.containerSocial{
+    background-color:#FFFFFF;
+    margin-bottom:20px;
+    border-radius:10px;
+    padding:5px 0 5px 3%;
+}
+.nav-pills li{
+    width:31%;
+}
+.nav-pills > li > a {
+    padding-top:0;
+}
+.nav-pills > li > a:hover{
+    background-color:transparent;
+}
+.nav-pills .facebook a, .nav-pills .twitter a, .nav-pills .google a{    
+    padding-left:26%;
+}
+.facebook{
+    background:transparent url(../images/iconFacebook.png) no-repeat;    
+}
+.twitter{
+    background:transparent url(../images/iconTwitter.png) no-repeat;
+}
+.google{
+    background:transparent url(../images/iconGoogle.png) no-repeat;
+}
+/***** End third row content *****/
+/***** Begin generics *****/
+.pinkColor{
+    color:#E61052;
+}
+.pinkBackground{
+    background-color:#E61052;
+}
+.pinkLighterBackground{
+    background-color:#EAE2D7;
+}
+.whiteColor, .whiteColor a{
+    color:#FFFFFF;
+}
+.grayColor{
+    color:#97866F;
+}
+.scaleBackground{
+    background-size:100% auto;    
+}
+.brandingHeight{
+    min-height:60px;
+}
+.borderRadius{
+    border-radius:10px;
+}
+.alignRight{
+    text-align:right;
+    margin:0 12% 0 0;
+}
+.noPadding{
+    padding:0;
+}
+.borderRadiusRight{
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+}
+.borderRadiusLeft{
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;    
+}
+.bulletBoxArrow > li{
+    background:url(../images/bulletBoxAndArrow.png) no-repeat left 10px;
+}
+/***** End generics *****/
 /***** Begin media queries *****/
  @media (max-width:640px){
     .brandingTop{
@@ -101,6 +166,9 @@ body{
     .borderRadiusLeft{
         border-top-left-radius:0;
         border-bottom-left-radius:0;    
+    }    
+    .row2 .colRight{
+        margin-top:27%;   
     }    
 }
 @media (max-width: 640px) and (orientation:landscape){
