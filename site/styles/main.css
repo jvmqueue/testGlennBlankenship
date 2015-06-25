@@ -43,7 +43,7 @@ body{
 
 
 
-@media (min-width: 360px) and (max-width: 767px){ /* mobile all  */
+@media (min-width:360px), (max-width:768px){ /* mobile all  */
     
 
     #txtSearch.form-control.sm_inline{
